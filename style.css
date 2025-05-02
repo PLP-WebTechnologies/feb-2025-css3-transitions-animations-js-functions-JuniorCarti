@@ -1,0 +1,147 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Theme Styles */
+.light {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.dark {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.blue {
+    background-color: #e6f2ff;
+    color: #003366;
+}
+
+.green {
+    background-color: #e6ffe6;
+    color: #006600;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pulse Animation */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+}
+
+/* Animation Box */
+.animation-box {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Slide and Rotate Animation */
+.slide-rotate {
+    animation: slideAndRotate 2s ease-in-out;
+}
+
+@keyframes slideAndRotate {
+    0% {
+        left: 0;
+        transform: rotate(0deg);
+    }
+    50% {
+        left: 200px;
+        transform: rotate(180deg);
+    }
+    100% {
+        left: 0;
+        transform: rotate(360deg);
+    }
+}
+
+/* Bounce Animation */
+.bounce {
+    animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Welcome Message */
+.welcome-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.show {
+    opacity: 1;
+}

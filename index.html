@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & JavaScript Animations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Animation Demo</h1>
+        
+        <div class="preference-section">
+            <h2>User Preferences</h2>
+            <div class="form-group">
+                <label for="username">Your Name:</label>
+                <input type="text" id="username" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="theme">Theme Color:</label>
+                <select id="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <button id="savePrefs" class="btn">Save Preferences</button>
+            <button id="resetPrefs" class="btn">Reset Preferences</button>
+        </div>
+        
+        <div class="animation-section">
+            <h2>Animation Controls</h2>
+            <button id="animateBtn" class="btn pulse">Click to Animate!</button>
+            <div id="animationBox" class="animation-box"></div>
+        </div>
+        
+        <div class="welcome-message" id="welcomeMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
